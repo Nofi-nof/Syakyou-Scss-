@@ -1,5 +1,5 @@
 .header {
-  background-color: var(--prtimes-blue);
+  background-color: $prtimes-blue;
 
   &__container {
     display: flex;
@@ -7,7 +7,7 @@
     margin: 0 auto;
     padding: 12px 0;
     align-items: center;
-    color: var(--script-gray);
+    color: $script-gray;
   }
 }
 
@@ -24,7 +24,7 @@
     background-color: #345584;
     border-radius: 4px;
     padding: 6px 8px 8px;
-    color: var(--white);
+    color: $white;
     font-size: 13px;
   }
 
@@ -34,7 +34,7 @@
   }
 
   &__list li + li {
-    border-left: 1px solid var(--script-gray);
+    border-left: 1px solid $script-gray;
   }
 }
 
@@ -58,7 +58,7 @@
     height: 30px;
     width: 30px;
     border-radius: 0 4px 4px 0;
-    background-color: var(--link-blue);
+    background-color: $link-blue;
     background-image: url(../img/serch_icon.svg);
     background-size: 21px;
     background-repeat: no-repeat;
@@ -73,7 +73,7 @@
 
   &__list {
     display: flex;
-    color: var(--script-gray);
+    color: $script-gray;
     font-size: 13px;
   }
 
@@ -83,22 +83,22 @@
   }
 
   &__list li + li {
-    border-left: 1px solid var(--script-gray);
+    border-left: 1px solid $script-gray;
   }
 
   &__list :hover {
-    color: var(--white);
+    color: $white;
   }
 }
 
 .header-category-navigation {
-  background-color: var(--white);
+  background-color: $white;
 
   &__list {
     display: flex;
     padding: 15px 0;
     justify-content: center;
-    color: var(--prtimes-blue);
+    color: $prtimes-blue;
     font-size: 13px;
   }
 

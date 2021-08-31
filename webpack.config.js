@@ -84,6 +84,9 @@ module.exports = {
               sourceMap: enabledSourceMap,
             },
           },
+          {
+            loader: 'import-glob-loader',
+          },
         ],
       },
       // file-loader の設定を追加
@@ -97,6 +100,7 @@ module.exports = {
             options: {
               // 画像ファイルの名前とパスの設定
               name: './images/[name].[ext]',
+              outputPath: 'assets/img/',
             },
           },
         ],

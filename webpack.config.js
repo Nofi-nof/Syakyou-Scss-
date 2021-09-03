@@ -6,13 +6,15 @@ const path = require('path')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 // CleanWebpackPlugin の読み込み
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
+// HTMLWebpackPlugin の読み込み
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 const enabledSourceMap = process.env.NODE_ENV !== 'production'
 
 module.exports = {
-  //エントリポイント（デフォルトと同じなので省略可）
+  //エントリポイント
   entry: './src/index.js',
-  //出力先（デフォルトと同じなので省略可）
+  //出力先
   output: {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
@@ -114,6 +116,9 @@ module.exports = {
     new MiniCssExtractPlugin({
       // 抽出する CSS のファイル名
       filename: 'style.css',
+    }),
+    new HtmlWebpackPlugin({
+      template: 'index.html',
     }),
   ],
   //source-map タイプのソースマップを出力

@@ -1,0 +1,24 @@
+.header-intro-navigation {
+  width: 1125px;
+  margin: 0 auto;
+  padding: 12px 0;
+
+  &__list {
+    display: flex;
+    color: $script-gray;
+    font-size: 13px;
+
+    li {
+      margin-right: 6px;
+      padding-left: 10px;
+    }
+
+    li + li {
+      border-left: 1px solid $script-gray;
+    }
+
+    &:hover {
+      color: $white;
+    }
+  }
+}

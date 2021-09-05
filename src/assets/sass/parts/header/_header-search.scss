@@ -1,0 +1,27 @@
+.header-search {
+  &__form {
+    display: flex;
+    padding-left: 15px;
+  }
+
+  &__input {
+    width: 258px;
+    height: 30px;
+    border-radius: 4px 0 0 4px;
+    background-color: white;
+    padding-left: 8px;
+    line-height: 30px;
+    font-size: 13px;
+  }
+
+  &__button {
+    height: 30px;
+    width: 30px;
+    border-radius: 0 4px 4px 0;
+    background-color: $link-blue;
+    background-image: url(../img/serch_icon.svg);
+    background-size: 21px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}

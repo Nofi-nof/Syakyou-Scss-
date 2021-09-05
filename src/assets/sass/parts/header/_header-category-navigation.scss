@@ -1,0 +1,19 @@
+.header-category-navigation {
+  background-color: $white;
+
+  &__list {
+    display: flex;
+    padding: 15px 0;
+    justify-content: center;
+    color: $prtimes-blue;
+    font-size: 13px;
+
+    &:hover {
+      font-weight: bold;
+    }
+
+    li {
+      padding: 0 10px;
+    }
+  }
+}

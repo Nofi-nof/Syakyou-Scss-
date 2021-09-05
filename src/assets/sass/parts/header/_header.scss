@@ -1,0 +1,12 @@
+.header {
+  background-color: $prtimes-blue;
+
+  &__container {
+    display: flex;
+    max-width: 1125px;
+    margin: 0 auto;
+    padding: 12px 0;
+    align-items: center;
+    color: $script-gray;
+  }
+}

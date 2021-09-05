@@ -1,0 +1,21 @@
+.header-reqest {
+  padding-left: 20px;
+
+  &__list {
+    display: flex;
+    background-color: #345584;
+    border-radius: 4px;
+    padding: 6px 8px 8px;
+    color: $white;
+    font-size: 13px;
+
+    li {
+      margin-right: 6px;
+      padding-left: 10px;
+    }
+
+    li + li {
+      border-left: 1px solid $script-gray;
+    }
+  }
+}

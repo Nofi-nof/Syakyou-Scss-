@@ -1,0 +1,26 @@
+.footer-menu {
+  display: table;
+  width: 100%;
+  border-bottom: 1px solid $main-line-gray;
+
+  &__list-wrap {
+    display: table-cell;
+  }
+
+  &__list-heading {
+    color: $black;
+    font-size: 13px;
+    padding-bottom: 15px;
+  }
+
+  &__list-item {
+    color: $script-dark-gray;
+    font-size: 12px;
+    padding-bottom: 15px;
+
+    &:hover {
+      text-decoration: underline;
+      color: $black;
+    }
+  }
+}

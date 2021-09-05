@@ -1,0 +1,42 @@
+.sidebar-keywords {
+  padding-bottom: 20px;
+  border-bottom: 1px solid $main-line-gray;
+
+  &__heading {
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+    padding-bottom: 15px;
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__list-item {
+    background-color: $back-gray;
+    border-radius: 14px;
+    font-size: 13px;
+    color: $black;
+    padding: 4px 8px;
+    cursor: pointer;
+    margin: 0 12px 9px 0;
+
+    &:hover {
+      font-weight: bold;
+    }
+  }
+
+  &list-item--more {
+    height: 22px;
+    border: 1px solid $back-gray;
+    border-radius: 14px;
+    font-size: 12px;
+    color: $black;
+    padding: 4px 8px;
+
+    &:hover {
+      color: var(--link-blue);
+    }
+  }
+}

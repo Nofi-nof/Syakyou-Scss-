@@ -1,0 +1,60 @@
+.catch-ranking {
+  &__container {
+    width: 181px;
+    height: 244px;
+  }
+
+  &__rank-number {
+    width: 24px;
+    height: 24px;
+    background-color: $prtimes-blue;
+    font-size: 17px;
+    color: $white;
+    font-weight: bold;
+    font-style: italic;
+    position: absolute;
+    text-align: center;
+    padding: 2px 0 10px 0px;
+  }
+
+  &__content {
+    padding: 7px 10px;
+  }
+
+  &__img {
+    height: 116px;
+    width: 181px;
+    cursor: pointer;
+  }
+
+  &__title {
+    font-size: 13px;
+    color: $black;
+    cursor: pointer;
+    line-height: 1.5;
+
+    &:hover {
+      color: $link-blue;
+      text-decoration: underline;
+    }
+  }
+
+  &__info {
+    color: $script-dark-gray;
+    padding-top: 28px;
+  }
+
+  &__time {
+    font-size: 12px;
+  }
+
+  &__company-name {
+    font-size: 13px;
+    cursor: pointer;
+    padding-top: 3px;
+
+    &:hover {
+      color: $black;
+    }
+  }
+}

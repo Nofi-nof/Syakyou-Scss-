@@ -1,0 +1,18 @@
+.catch-rankings-links {
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0 0 0;
+
+    li + li {
+      border-left: 8px solid $back-gray;
+    }
+  }
+
+  &__item {
+    width: 181px;
+    height: 244px;
+    background-color: $white;
+  }
+}

@@ -8,6 +8,8 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 // HTMLWebpackPlugin の読み込み
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+// CopyFilePlugin の読み込み
+const CopyFilePlugin = require('copy-webpack-plugin')
 
 const enabledSourceMap = process.env.NODE_ENV !== 'production'
 
@@ -20,6 +22,12 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     publicPath: '',
   },
+
+  //child compilationsの詳細をオープン
+  stats: {
+    children: true,
+  },
+
   devServer: {
     //ルートディレクトリの指定
     contentBase: path.join(__dirname, ''),
@@ -119,6 +127,15 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       template: 'index.html',
+    }),
+    new CopyFilePlugin({
+      patterns: [
+        {
+          context: 'public',
+          from: 'images/*',
+          to: path.resolve(__dirname, 'dist'),
+        },
+      ],
     }),
   ],
   //source-map タイプのソースマップを出力
